@@ -47,13 +47,15 @@ Personal portfolio to showcase projects
 Tech: HTML, CSS, JavaScript
 
 📁 Project Structure
+
 Portfolio-Website/
+
 │── index.html
 │── about.html
 │── resume.html
 │── skills.html
 │── projects.html
 │── contact.html
-│── css/
-│── images/
+│── css/style.css
+│── images/profile.jpg
 │── README.md
