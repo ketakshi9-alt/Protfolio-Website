@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000;
+            color: #fff;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #fcbf49;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            color: #bbb;
+            margin-bottom: 10px;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 1rem 0;
+            border-bottom: 1px solid #111;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links a.active {
+            color: #fcbf49;
+            border-bottom: 2px solid #fcbf49;
+        }
+
+        /* Resume Section */
+        .resume {
+            padding: 3rem 0;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .highlight {
+            color: #fcbf49;
+            font-weight: 600;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #bbb;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            background: #0a0a0a;
+            color: #aaa;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+        <div class="logo">KETAKSHI KOSHTI</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#">Resume</a></li>
+        </ul>
+        </div>
+    </header>
+
+<!-- Resume Section -->
+<section class="resume container">
+
+    <h1>KETAKSHI KOSHTI</h1>
+    <p class="highlight">Student | Python Developer</p>
+    <p>📞 9926039298 | 📧 ketakshi9@gmail.com</p>
+    <p>📍 Indore, Madhya Pradesh</p>
+
+    <!-- About -->
+    <div class="section">
+        <h2>About Me</h2>
+        <p>
+            Computer Science student with strong fundamentals in Data Structures, OOPS, and Web Development. Passionate about building scalable applications and solving real-world problems using Python.
+        </p>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>B.Tech in Computer Science</strong> – CDGI (2023 - 2027)</p>
+        <p>CGPA: 8/10</p>
+
+        <p><strong>12th (MP Board)</strong> – 2021-2022</p>
+        <p>Percentage: 80%</p>
+
+        <p><strong>10th (MP Board)</strong> – 2019-2020</p>
+        <p>Percentage: 83.69%</p>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+        <h2>Projects</h2>
+
+        <p><span class="highlight">Real Time Threat Detection</span> | HTML, Python</p>
+        <ul>
+            <li>Developed face detection application for real-time threat detection</li>
+            <li>Built REST APIs for alerts and notifications</li>
+            <li>Optimized performance using camera processing</li>
+        </ul>
+
+        <p><span class="highlight">Hidden Camera Detector App</span> | Python, Flask, OpenCV, JS</p>
+        <ul>
+            <li>Detects hidden spy cameras in trial rooms</li>
+            <li>Improves security where manual detection is difficult</li>
+        </ul>
+
+        <p><span class="highlight">Portfolio Website</span> | HTML, CSS, JavaScript</p>
+        <ul>
+            <li>Responsive personal portfolio website</li>
+            <li>Showcases projects and contact details</li>
+        </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <h2>Skills</h2>
+        <p><strong>Languages:</strong> C, C++, Python</p>
+        <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
+        <p><strong>Backend:</strong> Python</p>
+        <p><strong>Database:</strong> SQL, MySQL</p>
+        <p><strong>Tools:</strong> Git, GitHub, VS Code</p>
+        <p><strong>Core Concepts:</strong> DSA, OOPS, DBMS, OS</p>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section">
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Cloud Foundation</li>
+            <li>AI Agent Intensive Course (Google)</li>
+            <li>RedHat Linux Fundamentals</li>
+        </ul>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 Ketakshi Koshti. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

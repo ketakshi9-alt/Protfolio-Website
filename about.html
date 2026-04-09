@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #000;
+        color: #fff;
+    }
+
+    .container {
+        width: 85%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 1rem 0;
+        border-bottom: 1px solid #111;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-weight: 700;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+        color: #fcbf49;
+        border-bottom: 2px solid #fcbf49;
+    }
+
+    /* About Section */
+    .about {
+        padding: 5rem 0;
+        background: #0a0a0a;
+    }
+
+    .about-grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .about-img img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .about-text {
+        flex: 1;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-text p {
+        color: #bbb;
+        margin-bottom: 1.5rem;
+    }
+
+    .info p {
+        margin-bottom: 8px;
+    }
+
+    .about-footer {
+        margin-top: 1.5rem;
+    }
+
+    .about-footer p {
+        color: #fcbf49;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .btn-primary {
+        background: #fcbf49;
+        color: #000;
+        padding: 10px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 2rem 0;
+        background: #0a0a0a;
+        color: #aaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .about-grid {
+        flex-direction: column;
+        text-align: center;
+        }
+
+        .about-img img {
+            width: 200px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+        <div class="logo">KETAKSHI KOSHTI</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#">About</a></li>
+        </ul>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container about-grid">
+
+        <!-- Image -->
+        <div class="about-img">
+            <img src="images/profile.jpg" alt="Profile">
+        </div>
+
+        <!-- Text -->
+        <div class="about-text">
+            <h2>About Me</h2>
+
+            <p>
+            I am a passionate Python enthusiast and developer who enjoys building real-world projects and continuously learning new technologies.
+            </p>
+
+            <div class="info">
+                <p><strong>Name:</strong> Ketakshi Koshti</p>
+                <p><strong>Date of Birth:</strong> January 23, 2005</p>
+                <p><strong>Address:</strong> Indore, Madhya Pradesh</p>
+                <p><strong>Zip Code:</strong> 452007</p>
+                <p><strong>Email:</strong> ketakshi9@gmail.com</p>
+                <p><strong>Phone:</strong> +91 99260 39298</p>
+            </div>
+
+            <div class="about-footer">
+                <p>10 Projects Completed</p>
+                <a href="#" class="btn-primary">Download CV</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 Ketakshi Koshti. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

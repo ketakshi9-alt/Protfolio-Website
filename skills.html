@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: 'Poppins', sans-serif;
+        background: #000;
+        color: #fff;
+        }
+
+        .container {
+        width: 85%;
+        max-width: 1100px;
+        margin: auto;
+        }
+
+        /* Navbar */
+        .navbar {
+        padding: 1rem 0;
+        border-bottom: 1px solid #111;
+        }
+
+        .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .logo {
+        font-weight: 700;
+        }
+
+        .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        }
+
+        .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        }
+
+        .nav-links a.active {
+        color: #fcbf49;
+        border-bottom: 2px solid #fcbf49;
+        }
+
+        /* Skills Section */
+        .skills {
+        padding: 4rem 0;
+        text-align: center;
+        }
+
+        .skills h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #fcbf49;
+        }
+
+        .skills p {
+        color: #bbb;
+        margin-bottom: 2rem;
+        }
+
+        .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        }
+
+        .skill-item {
+        text-align: left;
+        }
+
+        .skill-item p {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        color: #fff;
+        }
+
+        .bar {
+        width: 100%;
+        height: 8px;
+        background: #222;
+        border-radius: 5px;
+        }
+
+        .bar div {
+        height: 8px;
+        background: #fcbf49;
+        border-radius: 5px;
+        }
+
+        /* Footer */
+        .footer {
+        text-align: center;
+        padding: 2rem 0;
+        background: #0a0a0a;
+        color: #aaa;
+        margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+        .skills {
+            padding: 2rem 0;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+        <div class="logo">KETAKSHI KOSHTI</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#">Skills</a></li>
+        </ul>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="skills container">
+        <h2>My Skills</h2>
+        <p>Here are my technical skills and expertise</p>
+
+        <div class="skills-grid">
+
+        <div class="skill-item">
+            <p>Python <span>90%</span></p>
+            <div class="bar"><div style="width:90%"></div></div>
+        </div>
+
+        <div class="skill-item">
+            <p>C / C++ <span>80%</span></p>
+            <div class="bar"><div style="width:80%"></div></div>
+        </div>
+
+        <div class="skill-item">
+            <p>HTML <span>95%</span></p>
+            <div class="bar"><div style="width:95%"></div></div>
+        </div>
+
+        <div class="skill-item">
+            <p>CSS <span>90%</span></p>
+            <div class="bar"><div style="width:90%"></div></div>
+        </div>
+
+        <div class="skill-item">
+            <p>JavaScript <span>85%</span></p>
+            <div class="bar"><div style="width:85%"></div></div>
+        </div>
+
+        <div class="skill-item">
+            <p>SQL / MySQL <span>80%</span></p>
+            <div class="bar"><div style="width:80%"></div></div>
+        </div>
+
+        <div class="skill-item">
+            <p>Flask <span>75%</span></p>
+            <div class="bar"><div style="width:75%"></div></div>
+        </div>
+
+        <div class="skill-item">
+            <p>Git & GitHub <span>85%</span></p>
+            <div class="bar"><div style="width:85%"></div></div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Ketakshi Koshti. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

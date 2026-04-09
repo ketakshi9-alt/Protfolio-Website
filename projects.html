@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+        font-family: 'Poppins', sans-serif;
+        background: #000;
+        color: #fff;
+        }
+
+        .container {
+        width: 85%;
+        max-width: 1100px;
+        margin: auto;
+        }
+
+        /* Navbar */
+        .navbar {
+        padding: 1rem 0;
+        border-bottom: 1px solid #111;
+        }
+
+        .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .logo { font-weight: 700; }
+
+        .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        }
+
+        .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        }
+
+        .nav-links a.active {
+        color: #fcbf49;
+        border-bottom: 2px solid #fcbf49;
+        }
+
+        /* Projects */
+        .projects {
+        padding: 4rem 0;
+        text-align: center;
+        }
+
+        .projects h2 {
+        color: #fcbf49;
+        margin-bottom: 1rem;
+        }
+
+        /* Filter Buttons */
+        .filter-btns {
+        margin-bottom: 2rem;
+        }
+
+        .filter-btns button {
+        padding: 8px 15px;
+        margin: 5px;
+        border: none;
+        border-radius: 20px;
+        background: #222;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+        }
+
+        .filter-btns button.active,
+        .filter-btns button:hover {
+        background: #fcbf49;
+        color: #000;
+        }
+
+        /* Grid */
+        .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        }
+
+        .project-card {
+        background: #0a0a0a;
+        padding: 1.5rem;
+        border-radius: 10px;
+        transition: 0.3s;
+        }
+
+        .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgba(252,191,73,0.3);
+        }
+
+        .project-card h3 {
+        color: #fcbf49;
+        margin-bottom: 10px;
+        }
+
+        .project-card p {
+        color: #bbb;
+        font-size: 0.9rem;
+        }
+
+        .tech {
+        margin-top: 10px;
+        font-size: 0.85rem;
+        color: #aaa;
+        }
+
+        .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 15px;
+        border-radius: 20px;
+        background: #fcbf49;
+        color: #000;
+        text-decoration: none;
+        font-size: 0.85rem;
+        }
+
+        /* Footer */
+        .footer {
+        text-align: center;
+        padding: 2rem 0;
+        background: #0a0a0a;
+        color: #aaa;
+        margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+    <div class="container nav-container">
+        <div class="logo">KETAKSHI KOSHTI</div>
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="#">Projects</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <section class="projects container">
+    <h2>My Projects</h2>
+
+    <!-- Filter Buttons -->
+    <div class="filter-btns">
+        <button onclick="filterProjects('all')" class="active">All</button>
+        <button onclick="filterProjects('ml')">ML</button>
+        <button onclick="filterProjects('web')">Web</button>
+        <button onclick="filterProjects('python')">Python</button>
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- ML Projects -->
+        <div class="project-card" data-category="ml">
+            <h3>House Price Prediction</h3>
+            <p>Predict house prices using machine learning algorithms based on various features.</p>
+            <div class="tech">Python, ML, Pandas, Scikit-learn</div>
+            <a href="https://github.com/ketakshi9-alt" class="btn">GitHub</a>
+        </div>
+
+        <div class="project-card" data-category="ml">
+            <h3>Loan Approval Prediction</h3>
+            <p>Predict loan approval status using applicant data and ML models.</p>
+            <div class="tech">Python, ML, Flask</div>
+            <a href="https://github.com/ketakshi9-alt" class="btn">GitHub</a>
+        </div>
+
+        <div class="project-card" data-category="ml">
+            <h3>Car Mileage Prediction</h3>
+            <p>Predict vehicle mileage using regression techniques.</p>
+            <div class="tech">Python, ML</div>
+            <a href="https://github.com/ketakshi9-alt" class="btn">GitHub</a>
+        </div>
+
+        <!-- Python Projects -->
+        <div class="project-card" data-category="python">
+            <h3>Hidden Camera Detector</h3>
+            <p>Detect hidden spy cameras using OpenCV and improve security.</p>
+            <div class="tech">Python, Flask, OpenCV</div>
+            <a href="https://github.com/ketakshi9-alt" class="btn">GitHub</a>
+        </div>
+
+        <div class="project-card" data-category="python">
+            <h3>Real-Time Threat Detection</h3>
+            <p>Face detection system for real-time threat alerts and monitoring.</p>
+            <div class="tech">Python, Computer Vision</div>
+            <a href="https://github.com/ketakshi9-alt" class="btn">GitHub</a>
+        </div>
+
+        <!-- Web Projects -->
+        <div class="project-card" data-category="web">
+            <h3>Zomato Frontend Clone</h3>
+            <p>Responsive frontend UI inspired by Zomato design.</p>
+            <div class="tech">HTML, CSS, JavaScript</div>
+            <a href="https://github.com/ketakshi9-alt" class="btn">GitHub</a>
+        </div>
+
+        <div class="project-card" data-category="web">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio to showcase skills and projects.</p>
+            <div class="tech">HTML, CSS, JavaScript</div>
+            <a href="https://github.com/ketakshi9-alt" class="btn">GitHub</a>
+        </div>
+
+    </div>
+    </section>
+
+    <footer class="footer">
+    <p>© 2025 Ketakshi Koshti. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Filter -->
+    <script>
+    function filterProjects(category) {
+    let cards = document.querySelectorAll('.project-card');
+    let buttons = document.querySelectorAll('.filter-btns button');
+
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+        card.style.display = "block";
+        } else {
+        card.style.display = "none";
+        }
+    });
+    }
+    </script>
+
+</body>
+</html>
